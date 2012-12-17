@@ -1,0 +1,729 @@
+* {
+	padding: 			0;
+	margin: 			0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: 	border-box;
+	box-sizing: 		border-box;
+}
+
+html, body {
+	min-width: 				1200px;
+}
+
+body{
+	background-color:	#2E0000;
+	font-family: 		HelveticaNeue, Helvetica, Tahoma, sans-serif;
+	line-height:		1.5em;
+}
+
+h1, h2, h3, h4 {
+	font-family: 		'SeasideResortNFRegular', sans-serif;
+}
+
+a, a:visited {
+	color: 				#fdf6e3;
+	text-decoration: 	none;
+}
+
+a:hover, a:focus {
+	color: 				#e6e6e6;
+}
+
+.noise {
+	background-color: 	rgba(71, 13, 13, 0.2);
+	background-image: 	-webkit-radial-gradient(50% 50%, circle contain, rgba(200, 0, 0, 0.7), rgba(71, 13, 13, 0.7) 500px);
+	display:			block;
+	position: 			fixed;
+	top: 				0;
+	left: 				0;
+	bottom: 			0;
+	right: 				0;
+	z-index:  			1;
+}
+
+header, .menu-main, .content-main, .article-main, .article-main-events,.article-main-news,.article-main-team, .flex-caption, footer {
+	position: 			relative;
+	z-index:   			2;
+}
+
+/*************************** Αρχη Header***********************************************************************/
+header{
+	background:			#220000;
+	width: 				100%;
+	height:				202px;
+	margin:				0 auto;
+}
+
+	header h1 a{
+		background: 		url(images/general/header.jpg) no-repeat;
+		width: 				1200px;
+		height: 			202px;
+		display: 			block;
+		margin: 			0 auto;
+		font: 				0/0 a;
+		text-shadow: 		none;
+		color: 				transparent;
+	}
+
+		header h3{
+			visibility:   		hidden;
+		}
+
+/*****************************Αρχη NAV****************************************************************************/
+
+.menu-main{
+	text-align:			center;	
+	background:			rgba(209,2,61,0.4);
+	font-family: 		'SeasideResortNFRegular', sans-serif;
+	display:			block;
+	width:				100%;
+
+}
+	.menu-main ul {
+		width: 			1200px;
+		text-align: 	center;
+		margin: 		0 auto;
+	}
+
+	.menu-main ul li{
+		display:			inline-block;
+		padding:			0 10px;
+		margin:				12px 0 5px 0;
+	}
+		.menu-main ul li a{
+			color:				rgba(250,250,250,0.7);
+			font-size:			1.2em;
+			text-decoration: 	none;
+		}
+			.menu-main ul li a:hover{
+				color:				white;
+			}
+
+/*************************Δημιουργω το Sprite για το social logo**************************************************/
+				.menu-main ul li:nth-child(7) a, .menu-main ul li:nth-child(8) a, .menu-main ul li:nth-child(9) a {
+					background:					url(images/general/icons-social.png) no-repeat;
+					width:						31px;
+					height:						31px;
+					display:					block;
+					color: 						transparent;
+					text-shadow: 				none;
+					position:					relative;
+					bottom:						3px;
+				}
+			
+				.menu-main ul li:nth-child(8) a {
+					background-position-x:		-42px;
+				}
+		
+				.menu-main ul li:nth-child(9) a {
+					background-position-x:		-84px;
+				}
+
+/******************************Αρχη Article***********************************************************************/
+
+.content-main article{
+	position:			relative;
+	padding-left: 		120px;
+	padding-right: 		120px;
+}
+
+.generic .content-main {
+	padding-left: 		200px;
+	padding-right: 		200px;
+}
+
+.content-main figure{
+	margin-top:			30px;
+}
+
+.generic .content-main {
+	width: 		1200px;
+	margin: 	0 auto 50px;
+}
+
+.home .content-main {
+	width: 		1200px !important;
+	margin: 	0 auto 50px;
+}
+
+
+	.content-main .flexslider {
+		width: 				752px;
+		margin: 			48px auto 0;
+		border: 			none;
+	}
+
+	.content-main .flex-caption{/**********************************************Δημιουργω το Flexcaption**********************/
+		margin:				0 auto;
+		text-align:			center;
+		display:			block;
+		background:			url(images/home/slider-bottom.jpg) no-repeat;
+		width:				752px;
+		height:				65px;
+		font: 				0/0 a;
+		color: 				transparent;
+		text-shadow: 		none;
+
+		top: 				100%;
+	}
+
+
+
+/******************************main-article***********************************************************/
+.main-article{
+	width:				530px;
+	margin:				0 auto;
+	background:			rgba(0,0,0,0.6);
+	display:			block;
+	margin-top:			120px;
+	position:			relative;
+	overflow: 			visible;
+	padding: 			20px 18px 38px;		
+}
+	.main-article h4, .main-article p{
+		padding:			30px 40px 0 40px;
+	}
+	.main-article h4{
+		font-size: 			1.4em;
+		text-shadow:		2px 1px 1px black;
+		color:				#C45656;
+	}
+	.main-article p{
+		color:				white;
+		font-family:		HelveticaNeue, Helvetica, Tahoma, sans-serif;
+		font-weight:		bold;
+		font-size: 			1.2em;	
+		font-weight:		lighter;
+		text-align: 		justify;
+	}
+
+	.book-concert-button{														 /****** 					 *****/
+		position:			absolute;
+		left:				-370px;
+		top:				-130px;
+		background:			url(images/home/home-button-concert.png) no-repeat;  /******με τις παρτιτουρες   *****/
+		width:				312px;												 /****** 					 *****/
+		height:				559px;												 /****** 					 *****/
+		display:			block;	
+		font: 				0/0 a;
+		color: 				transparent;
+		text-shadow: 		none;												/****** 					 *****/
+	}
+
+	.violin{
+		background:			url(images/home/home-violin.png) right no-repeat;/**************Violin Logo****************/
+		width:				281px;
+		height:				629px;
+		display:			block;
+		position:			absolute;
+		left:				600px;
+		top:				-470px;
+	}
+
+	.our-music-button{															/****** 					 *****/
+		background:			url(images/home/home-button-cds.png) no-repeat;	/******με τα CD's 			 *****/
+		width:				263px;											/****** 					 *****/
+		height:				244px;											/****** 					 *****/
+		display:			block;											/****** 					 *****/
+		font: 				0/0 a;
+		color: 				transparent;
+		text-shadow: 		none;	
+		position: 			absolute;
+		left: 				580px;
+		top: 				160px;	
+	}
+
+	.violin-bow{
+		background:			url(images/home/home-violin-bow.png) no-repeat;/***********Violin Bow Logo******************/
+		display:			block;
+		width:				482px;
+		height:				63px;
+		position:			absolute;
+		left:				30px;
+		top:				106%;
+	}
+/********************************End main-article*************************************************************/
+
+
+
+/**************************************Τελος Article**********************************************************************/
+
+/**************************************Αρχη Aside************************************************************************/
+
+.microfone{
+	background:			url(images/home/home-mic.png) top left no-repeat;/*****************Microfone Logo**************/
+	width:				86px;
+	height:				200px;
+	display:			block;
+	position:			absolute;
+	left:				-34px;
+	top:				-44px;
+}
+
+/*********************************************Our Belief article******************************************************/
+.our-belief-article{
+	width:				770px;
+	height:				220px;
+	background:			rgba(0,0,0,0.6);
+	display:			block;
+	margin: 			120px auto 80px;
+	position:			relative;
+	left: 				-180px;
+}
+	.our-belief-article h4{
+		padding: 			40px 0 0 50px;
+		color:				#C45656;
+		font-size: 			1.4em;
+		text-shadow:		2px 1px 1px black;		
+	}
+	.our-belief-article p{
+		padding:			20px 50px 0 50px;
+		color:				white;
+		font-family:		HelveticaNeue, Helvetica, Tahoma, sans-serif;
+		font-size: 			1.2em;	
+		font-weight:		lighter;
+		text-align: 		justify;	
+	}	
+/*********************************************End Our Belief article****************************************************/
+aside{
+	position: 			relative;
+}
+.newsletter-button{																/*****					   ******/	
+	background:			url(images/home/home-button-newsletter.png) no-repeat;	/*****με το φυλλαδιο	   ******/
+	display:			block;													/*****					   ******/
+	width:				263px;													/*****					   ******/
+	height:				295px;													/*****					   ******/
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;
+
+	position: 			absolute;
+	left: 				820px;	
+	top: 				-30px;
+}
+
+/***************************************Τελος Aside********************************************************************/
+
+/***************************************Τελος Article******************************************************************/
+
+/***************************************Αρχη Footer*******************************************************************/
+
+footer{
+	background:				#1f0000;
+	position: 				relative;
+	background:				#220000 url(images/general/footer.jpg) top center no-repeat;
+	width:					100%;
+	height:					168px;
+	margin:					0 auto;	
+}
+
+	footer h6 {
+		visibility: 		hidden;
+	}
+
+.charity {
+	width: 					960px;
+	margin: 				0 auto;
+	margin-top: 			100px;
+}
+	.charity a {
+		font-size: 			11px;
+		text-align: 		center;
+		font-family: 		Georgia, serif;
+	}
+
+/****************************************Τελος Footer********************************************************************/
+
+/****************************************Διαμορφωση AboutF2F Page*********************************************************/
+
+.generic h2{
+	color:				rgba(250,250,250,0.6);
+	padding:			50px 0 50px 200px;
+	font-size:			2em;
+}
+
+.the-band{
+	display:			block;
+	margin:				0 auto;
+	margin-bottom: 		30px;
+}
+
+.generic .article-main{
+	margin-bottom: 		100px;
+}
+.generic .article-main p {
+	font-family: 		'palatino linotype', palatino, serif;
+	color:				white;
+	text-align: 		justify;
+	font-size: 			14px;
+	margin-bottom: 		17px;
+	line-height: 		1.5;
+}
+
+.main-article, .our-belief-article {
+	padding: 		50px;
+}
+
+	.our-belief-article {
+		margin-top: 		155px;
+	}
+
+	.main-article h4, .our-belief-article h4 {
+		padding: 			0;
+		margin-bottom: 		22px;
+	}
+
+	.main-article p, .our-belief-article p {
+		font-family: 		'palatino linotype', palatino, serif;
+		color:				white;
+		text-align: 		justify;
+		font-size: 			14px;
+		margin-bottom: 		13px;
+		line-height: 		1.5;
+		padding: 			0;
+	}
+
+/*****************************************Τελος AboutF2F Page*************************************************************/
+/*****************************************Διαμόρφωση Team Page*******************************************************/
+.article-main-team{
+/*	width:				1200px;*/
+}
+/****************Τοποθετηση των μικρων φωτογραφιών*************************/
+.imgs-team{
+	width:				800px;
+}
+	.imgs-team li{
+		display:			inline-block;
+		vertical-align:		middle;
+	}
+
+.graham-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+
+}
+
+/*******************Εμφανισει των μικρων φωτο με τη μεθοδο sprite****************/
+.alison-img{
+	background:				url(images/team/thumbs.png) no-repeat;
+	width:					85px;
+	height:					105px;
+	display:				block;
+	background-position: 	-90px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;
+}
+
+.judith-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-180px;	
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;
+}
+
+.maria-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-270px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;
+}
+
+.geraldine-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-360px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.pete-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-450px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.ray-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-540px;
+
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.nina-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-630px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.andy-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-720px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.paul-anne-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-814px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.steve-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-902px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+
+}
+
+.dave-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-994px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+
+.tim-img{
+	background:			url(images/team/thumbs.png) no-repeat;
+	width:				85px;
+	height:				105px;
+	display:			block;
+	background-position: 	-1085px;
+	font: 				0/0 a;
+	color: 				transparent;
+	text-shadow: 		none;	
+}
+	.imgs-team li:nth-child(14){/************************Διαμορφωση του σχολιου διπλα στις μικρες φωτο*****************/
+		color:			yellow;
+		font-family:  	'Petit Formal Script', cursive;
+		margin-left: 	30px;
+		font-size: 		1.3em;
+	}
+/**********************Διαμορφωση των φωτο με τις info*******************************************/
+
+
+.team .info img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.team .info div {
+	display: 	inline-block;
+	vertical-align: top;
+	width: 		550px !important;
+}
+									
+/*****************************************Τελος Team Page**************************************************************/
+/*****************************************Διαμόρφωση Events Page*******************************************************/
+
+.events-img{
+	display:			block;
+	margin:				0 auto;
+	margin-top: 		40px;
+}
+
+.generic h2{
+	color:				rgba(250,250,250,0.6);
+	padding:			50px 0 50px 180px;
+	font-size:			2em;
+}
+
+.generic .article-main-events{
+	margin-bottom: 		100px;
+	position:			relative;
+	overflow:			visible;
+}
+.generic .article-main-events p{
+	font-family: 		'palatino linotype', palatino, serif;
+	color:				white;
+	text-align: 		justify;
+	font-size: 			14px;
+	margin-bottom: 		17px;
+	margin-left: 		180px;
+	line-height: 		1.5;
+}
+
+	.calendar{
+		background:			url(images/events/calendar.png)  no-repeat;/**************Violin Logo****************/
+		width:				134px;
+		height:				133px;
+		display:			block;
+		position:			absolute;
+		left:				600px;
+		bottom:				270px;
+	}
+/*****************************************Τελος Events Page*******************************************************/
+
+/*****************************************Διαμόρφωση News Page*******************************************************/
+.generic h2{
+	color:				rgba(250,250,250,0.6);
+	padding:			50px 0 50px;
+	font-size:			2em;
+}
+.img-news{
+	display:			block;
+	margin:				0 auto;
+	margin-top: 		40px;
+	position:			relative;
+}
+
+.generic .article-main-news{
+	margin-bottom: 		100px;
+	position:			relative;
+	overflow:			visible;
+}
+.generic p{
+	font-family: 		'palatino linotype', palatino, serif;
+	color:				white;
+	text-align: 		justify;
+	font-size: 			14px;
+	margin-bottom: 		17px;
+	line-height: 		1.5;
+}
+
+.team .info div{
+	padding:			50px 0 0 50px;
+	width:				870px;
+	color:				white;
+}
+	.team .info div h5{
+		font-size:			1.1em;		
+	}
+		.team .info div span{
+			font-weight:	lighter;
+		}
+
+
+
+/*****************************************Τελος News Page*******************************************************/
+
+/*****************************************Διαμόρφωση Contact Page*******************************************************/
+
+
+
+/*****************************************Τελος Contact Page*******************************************************/
+
+#contact {
+	
+}
+
+#contact fieldset {
+	width: 		300px;
+	border: 	none;
+	outline: 	none;
+	padding: 	24px 6px 24px 24px;
+}
+
+label {
+	float: left; clear: left; margin: 11px 20px 0 0; width: 95px;
+	text-align: right; font-size: 16px; color: #445668; 
+	text-transform: uppercase; text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+input {
+	width: 100%; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 15px 0; 
+	background: #292828;
+	border: 	1px solid #111;
+	background: -moz-linear-gradient(top, #292828 0%, #292828 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#292828), color-stop(20%,#292828)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+
+	font-family: sans-serif; font-size: 12px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71; 
+}
+	input::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;  
+	}
+	input:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
+	}
+
+textarea {
+	width: 100%; height: 85px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0; 
+	background: #292828;
+	background: -moz-linear-gradient(top, #292828 0%, #292828 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#292828), color-stop(20%,#292828)); /* webkit */
+	border: 	1px solid #111;
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	font-family: sans-serif; font-size: 12px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71; 
+}
+	textarea::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;  
+	}
+	textarea:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
+	}
+	
+input:focus, textarea:focus {
+	background: #728eaa;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 117px; height: 33px; float: right; padding: 8px 15px; position: relative; top: -8px; left: -7px;
+	font-size: 	10px;
+	text-align: center;
+	background: black;
+	border: none;
+	cursor: pointer;
+	-webkit-border-radius:	60px;
+	-moz-border-radius:		60px;
+	border-radius:			60px;
+}
+
+	input[type=submit]:hover {
+		color: 		#ffc200;
+	}
+
+/*****************************************Διαμόρφωση Contact Page*******************************************************/
+
+/*****************************************Τελος Ολων*******************************************************/

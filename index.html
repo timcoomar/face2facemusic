@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset=utf-8>
+		<title>Face2Face</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="fonts/fonts.css" />
+
+		<!--Στοιχεια για το Flexslider-->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		
+		<script src="jquery.flexslider.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="http://kentro68.gr/assets/js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox main JS and CSS files -->
+		<script type="text/javascript" src="http://kentro68.gr/assets/css/jquery.fancybox.js?v=2.1.2"></script>
+		<link rel="stylesheet" type="text/css" href="http://kentro68.gr/assets/css/jquery.fancybox.css?v=2.1.2" media="screen" />
+		
+		<script type="text/javascript" charset="utf-8">
+ 		 $(document).ready(function() {
+    		
+
+    		$('.flexslider').flexslider({
+		          animation: "fade",
+		          slideshow: true,
+		          controlNav: false,
+		          directionNav: false,
+		          slideshowSpeed: 4000,
+		          animationSpeed: 1200
+		    });
+
+		    $(".fancybox").fancybox({
+					maxWidth	: 840,
+					maxHeight	: 600,
+					fitToView	: false,
+					width		: '70%',
+					height		: '70%',
+					autoSize	: false,
+					closeClick	: false
+				});
+		    
+ 		 });
+		</script>
+
+		<!--[if lt IE 9]>
+		     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body class="home">
+		<div class="noise"></div>
+		<header>
+			<h1><a href="index.html">face2face</a></h1>
+			<h3>Combining song and music for a face to face encounter with God</h3>
+		</header>
+
+		<nav class="menu-main">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="aboutf2f.html">ABOUT F2F</a></li>
+				<li><a href="team.html">THE TEAM</a></li>
+				<li><a href="events.html">EVENTS</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="#">FB</a></li>
+				<li><a href="#">TW</a></li>
+				<li><a href="#">EM</a></li>			
+			</ul>	
+		</nav>
+
+		<section class="content-main">
+			<article>
+
+				<figure>
+					<!--Δημιουργώ το Flexslider--> 
+					<div class="flexslider">
+					  <ul class="slides">
+					    <li>
+					      <img src="images/home/slider/slider-1.jpg" />
+					      <p class="flex-caption">Uplifting the soul...refreshing the spirit</p><!--Φτιαχνω το Caption-->
+					    </li>
+					    <li>
+					      <img src="images/home/slider/slider-2.jpg" />
+					      <p class="flex-caption">Uplifting the soul...refreshing the spirit</p><!--Φτιαχνω το Caption-->
+					    </li>
+					    <li>
+					      <img src="images/home/slider/slider-3.jpg" />
+					      <p class="flex-caption">Uplifting the soul...refreshing the spirit</p><!--Φτιαχνω το Caption-->
+					    </li>
+					    <li>
+					      <img src="images/home/slider/slider-4.jpg" />
+					      <p class="flex-caption">Uplifting the soul...refreshing the spirit</p><!--Φτιαχνω το Caption-->
+					    </li>
+					    <li>
+					      <img src="images/home/slider/slider-5.jpg" />
+					      <p class="flex-caption">Uplifting the soul...refreshing the spirit</p><!--Φτιαχνω το Caption-->
+					    </li>
+					  </ul>
+					</div>
+				</figure>
+
+				<div id="main-text" class="main-article cushycms">
+					<h4>WELCOME...</h4>
+
+					<span class="violin"></span>
+
+					<p>Face2Face are a group of Christian professional musicians who refresh audiences everywhere with a unique mixture of music, ranging from classical, rock, jazz, pop, ballads, opera and Christian songs.</p>
+					<p>Our aim is to perform a range of music to the highest professional standards conveying the love of God in a contemporary way.</p>
+
+					<a class="book-concert-button fancybox" data-fancybox-type="iframe" href="booking.html">How to book and organize a concert</a>
+					<a class="our-music-button" href="music.html">Our Music &amp; CD's</a>				
+					<span class="violin-bow"></span>
+				</div>
+				
+			</article>
+
+			<aside>
+
+				<div class="our-belief-article">
+					<span class="microfone"></span>
+
+					<div id="belief-text" class="cushycms">
+						<h4>OUR BELIEF</h4>
+						<p>Our belief is that a single message can begin to make a huge difference in someone's life, causing them to come 'face to face' with the love of God, shown in his dear son, the Lord Jesus Christ. The ministry of Face2Face is both national and international.</p>
+					</div>
+
+					<a class="newsletter-button fancybox" data-fancybox-type="iframe" href="subscribe.html">Download our newsletter</a>
+				</div>
+
+			</aside>
+		</section>
+
+		<footer>
+			<h6>The Lord your God is with you, He is might to save. He will take great delight in you, He will quiet you with his love, He will rejoice over you with singing."Zephaniah 3:17"</h6>
+			<p class="charity"><a href="http://prototypedesign.org.uk" target="_blank">Copyright Face2Face 2012. Face2Face is a registered Charity No: 1112918 &nbsp;&nbsp;&nbsp;&nbsp;			Site Design by Prototype Design</a>
+		</footer>
+
+		<script src="js/noise.js" type="text/javascript"></script>
+
+	</body>
+</html>
